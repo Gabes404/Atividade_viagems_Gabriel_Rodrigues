@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore o mundo - expedicoes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="folha.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class ="navegacao">
+            <nav class="menu-links">
+                <a href="index.html">inicio</a>
+                <a href="destinos.html">destinos</a>
+                <a href="sobre_nos.html">sobre nos</a>
+                <a href="contato.html">contato</a>
+            </nav>
+            <div class="redes-sociais">
+                <a href="" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
+        </div>
+</header>
+ <main class="container">
+        <h1 class="titulo-secao">Cadastro para Explore o mundo</h1>
+        <p class="subtitulo">Preencha seus dados para realizar a inscrição no Explore o mundo </p>
+
+        <div class="area-inscricao">
+            <form action="/processar-cadastro" method="post" class="coluna-form">
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required minlength="3" maxlength="50" required><br>
+
+                <label for="senha">Senha de acesso:</label><br>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required minlength="8" maxlength="20" required><br>
+                 
+                <label for="email">E-mail:</label><br>
+
+                <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required><br>
+
+                <label for="data_nacs"> Data de nacsimento:</label><br>
+                <input type="date" id="data_nacs" name="data_nacsimento" min="1900-01-01" max="2026-12-31"><br>
+
+
+                </select>
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Li e aceito os termos de uso</label><br><br>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <button type="reset" class="btn-limpar">Limpar tudo</button>
+
+                
+                
+
+            </form>
